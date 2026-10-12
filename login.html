@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | GOATVersus</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main class="narrow">
+    <div class="auth-card">
+      <div class="tabs" role="tablist" aria-label="Account">
+        <button id="tab-login" type="button" role="tab" aria-selected="true">Log in</button>
+        <button id="tab-register" type="button" role="tab" aria-selected="false">Create account</button>
+      </div>
+      <form id="auth-form">
+        <label class="field">Email
+          <input id="email" type="email" required autocomplete="email">
+        </label>
+        <label class="field">Password
+          <input id="password" type="password" required minlength="8" autocomplete="current-password">
+        </label>
+        <button id="auth-submit" class="btn wide" type="submit">Log in</button>
+        <p id="auth-msg" class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

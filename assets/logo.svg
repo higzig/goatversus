@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="GOATVersus logo: two goats ramming heads">
+  <defs>
+    <g id="goat">
+      <!-- neck and head -->
+      <path d="M0 200 L22 128 Q40 92 84 90 L146 98 Q176 102 180 122 Q178 138 160 140 L134 138 Q120 160 108 200 Z" fill="currentColor"/>
+      <!-- beard -->
+      <path d="M150 138 L142 168 L132 139 Z" fill="currentColor"/>
+      <!-- horn -->
+      <path d="M92 94 C58 70 56 28 100 10 C84 36 92 58 118 76" fill="#ffc83d" stroke="#0e1330" stroke-width="5" stroke-linejoin="round"/>
+      <!-- ear -->
+      <path d="M96 100 L58 96 L90 114 Z" fill="currentColor" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+      <!-- eye and nostril -->
+      <circle cx="136" cy="108" r="6" fill="#ffffff"/>
+      <circle cx="138" cy="108" r="2.5" fill="#0e1330"/>
+      <circle cx="171" cy="121" r="2.5" fill="#ffffff"/>
+    </g>
+  </defs>
+  <use href="#goat" color="#2447f5"/>
+  <use href="#goat" color="#ff4d2e" transform="translate(400 0) scale(-1 1)"/>
+  <!-- impact burst -->
+  <g transform="translate(200 110) scale(.6) translate(-200 -108)">
+    <polygon points="200,56 211,88 240,70 223,100 254,108 223,118 240,148 211,128 200,160 189,128 160,148 177,118 146,108 177,100 160,70 189,88" fill="#ffc83d" stroke="#0e1330" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>

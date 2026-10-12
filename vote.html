@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vote | GOATVersus</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main class="wrap" id="vote-app">
+    <div class="page-head">
+      <h1 id="category">Loading...</h1>
+      <p>Choose ten, then order them. Rank 1 earns 10 points, rank 10 earns 1.</p>
+      <div class="timer"><span>Votes lock in</span><strong id="countdown">--</strong></div>
+    </div>
+
+    <p id="closed-note" class="notice" hidden>Voting is not open for this week, so your list is read-only.</p>
+
+    <div class="vote-grid">
+      <section class="panel col-roster" aria-labelledby="roster-h">
+        <h2 id="roster-h">Choose from the roster</h2>
+        <input id="search" class="search" type="search" placeholder="Search by name or codename" aria-label="Search the roster">
+        <ul id="roster" class="roster"></ul>
+      </section>
+
+      <section class="panel col-picks" aria-labelledby="picks-h">
+        <div class="panel-head">
+          <h2 id="picks-h">Your top 10</h2>
+          <span id="picks-count">0 of 10 chosen</span>
+        </div>
+        <ol id="picks" class="picks"></ol>
+        <button id="submit" class="btn wide" type="button" disabled>Lock in my top 10</button>
+        <p id="vote-msg" class="msg" role="status" aria-live="polite"></p>
+
+        <div id="share" class="share" hidden>
+          <h2>Share your list</h2>
+          <pre id="share-text"></pre>
+          <div class="actions">
+            <button id="native-share" class="btn ghost" type="button">Share</button>
+            <button id="copy" class="btn ghost" type="button">Copy text</button>
+            <a id="share-x" class="btn ghost" target="_blank" rel="noopener noreferrer" href="#">Post on X</a>
+          </div>
+          <p id="share-msg" class="msg" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script type="module" src="js/vote.js"></script>
+</body>
+</html>

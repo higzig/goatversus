@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOATVersus: a new greatest-of-all-time ranking every week</title>
+  <meta name="description" content="Rank your top 10 each week. Points are tallied in secret and the top 50 is revealed when voting closes.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero">
+      <img class="logo" src="assets/logo.svg" alt="Two goats ramming heads">
+      <p class="week-label">This week's GOAT debate</p>
+      <h1 id="category">Loading...</h1>
+      <p class="desc" id="desc"></p>
+      <div class="timer">
+        <span id="countdown-label">Votes lock in</span>
+        <strong id="countdown">--</strong>
+      </div>
+      <div class="actions">
+        <a id="cta-vote" class="btn" href="login.html?next=vote.html">Join and vote</a>
+        <a id="cta-results" class="btn ghost" href="results.html">Check the results page</a>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="section">
+        <h2>How a week works</h2>
+        <div class="how">
+          <div class="card">
+            <h3>Build your top 10</h3>
+            <p>Pick ten from a curated list and put them in order. Share your list with anyone you want to argue with.</p>
+          </div>
+          <div class="card">
+            <h3>Every rank earns points</h3>
+            <p>Your number one gets 10 points, your number ten gets 1. Every ballot adds to the pile.</p>
+          </div>
+          <div class="card">
+            <h3>The tally stays secret</h3>
+            <p>Nobody sees the standings until voting closes. Then the top 50 goes live and a new category starts.</p>
+          </div>
+        </div>
+        <div class="points-table" aria-label="Points per rank">
+          <div>1st<b>10</b></div><div>2nd<b>9</b></div><div>3rd<b>8</b></div><div>4th to 9th<b>7 down to 2</b></div><div>10th<b>1</b></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

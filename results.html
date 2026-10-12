@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results | GOATVersus</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main class="wrap" id="results-app">
+    <div class="page-head">
+      <h1 id="category">Loading...</h1>
+      <p>The top 50 by total points from every ballot.</p>
+    </div>
+
+    <section id="locked" class="locked" hidden>
+      <h2 id="locked-title">The tally is locked</h2>
+      <p id="locked-text"></p>
+      <div class="timer"><span id="locked-label">Opens</span><strong id="countdown">--</strong></div>
+      <p id="voters"></p>
+    </section>
+
+    <section id="revealed" hidden>
+      <ol id="ranking" class="ranking"></ol>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script type="module" src="js/results.js"></script>
+</body>
+</html>
